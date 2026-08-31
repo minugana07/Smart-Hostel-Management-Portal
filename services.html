@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Smart Hostel | Services</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar">
+
+        <div class="logo">
+            <span>Smart Hostel</span>
+        </div>
+
+        <nav>
+            <a href="index.html">Dashboard</a>
+            <a href="registration.html">Registration</a>
+            <a href="rooms.html">Rooms</a>
+            <a href="complaints.html">Complaints</a>
+            <a href="fees.html">Fees</a>
+            <a href="mess.html">Mess</a>
+            <a href="maintenance.html">Maintenance</a>
+            <a href="services.html">Services</a>
+        </nav>
+
+    </header>
+
+
+    <!-- Page Header -->
+    <section class="page-header">
+
+        <p class="small-title">HOSTEL FACILITIES</p>
+
+        <h1>Hostel Services</h1>
+
+        <p>
+            Access available hostel services and request assistance.
+        </p>
+
+    </section>
+
+
+    <main class="services-container">
+
+
+        <!-- Service Summary -->
+        <section class="services-summary">
+
+            <div class="services-summary-content">
+
+                <div>
+
+                    <p class="small-title">
+                        SERVICES AVAILABLE
+                    </p>
+
+                    <h2>
+                        Everything you need, in one place.
+                    </h2>
+
+                    <p>
+                        Browse hostel facilities and submit
+                        service requests whenever you need them.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <span class="services-count">
+                6 Services
+            </span>
+
+        </section>
+
+
+        <!-- Services Grid -->
+        <section class="services-section">
+
+            <div class="section-top">
+
+                <div>
+
+                    <p class="small-title">
+                        AVAILABLE SERVICES
+                    </p>
+
+                    <h2>
+                        Explore Services
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="services-grid">
+
+
+                <!-- Laundry -->
+                <div class="service-card">
+
+                    <div class="service-card-top">
+
+                        <span class="service-available">
+                            Available
+                        </span>
+
+                    </div>
+
+                    <h3>
+                        Laundry Service
+                    </h3>
+
+                    <p>
+                        Convenient laundry and ironing service
+                        for hostel residents.
+                    </p>
+
+                    <div class="service-info">
+
+                        <span>
+                            8 AM – 8 PM
+                        </span>
+
+                        <span>
+                            ₹50 / kg
+                        </span>
+
+                    </div>
+
+                    <button class="service-btn" onclick="requestService('Laundry Service')">
+                        Request Service
+                    </button>
+
+                </div>
+
+
+                <!-- Housekeeping -->
+                <div class="service-card">
+
+                    <div class="service-card-top">
+
+                        <span class="service-available">
+                            Available
+                        </span>
+
+                    </div>
+
+                    <h3>
+                        Housekeeping
+                    </h3>
+
+                    <p>
+                        Room and common-area cleaning support
+                        for a comfortable stay.
+                    </p>
+
+                    <div class="service-info">
+
+                        <span>
+                            9 AM – 5 PM
+                        </span>
+
+                        <span>
+                            Free
+                        </span>
+
+                    </div>
+
+                    <button class="service-btn" onclick="requestService('Housekeeping')">
+                        Request Service
+                    </button>
+
+                </div>
+
+
+                <!-- Wi-Fi -->
+                <div class="service-card">
+
+                    <div class="service-card-top">
+
+                        <span class="service-available">
+                            Active
+                        </span>
+
+                    </div>
+
+                    <h3>
+                        Wi-Fi Support
+                    </h3>
+
+                    <p>
+                        Get help with hostel Wi-Fi connectivity,
+                        login and network issues.
+                    </p>
+
+                    <div class="service-info">
+
+                        <span>
+                            24 / 7
+                        </span>
+
+                        <span>
+                            Free
+                        </span>
+
+                    </div>
+
+                    <button class="service-btn" onclick="requestService('Wi-Fi Support')">
+                        Get Support
+                    </button>
+
+                </div>
+
+
+                <!-- Transport -->
+                <div class="service-card">
+
+                    <div class="service-card-top">
+
+                        <span class="service-available">
+                            Available
+                        </span>
+
+                    </div>
+
+                    <h3>
+                        Hostel Transport
+                    </h3>
+
+                    <p>
+                        Access scheduled hostel transportation
+                        and shuttle information.
+                    </p>
+
+                    <div class="service-info">
+
+                        <span>
+                            Scheduled
+                        </span>
+
+                        <span>
+                            ₹30 / trip
+                        </span>
+
+                    </div>
+
+                    <button class="service-btn" onclick="requestService('Hostel Transport')">
+                        View Schedule
+                    </button>
+
+                </div>
+
+
+                <!-- Security -->
+                <div class="service-card">
+
+                    <div class="service-card-top">
+
+                        <span class="service-available">
+                            24 / 7
+                        </span>
+
+                    </div>
+
+                    <h3>
+                        Security Assistance
+                    </h3>
+
+                    <p>
+                        Contact hostel security for assistance
+                        and emergency support.
+                    </p>
+
+                    <div class="service-info">
+
+                        <span>
+                            24 / 7
+                        </span>
+
+                        <span>
+                            Free
+                        </span>
+
+                    </div>
+
+                    <button class="service-btn" onclick="requestService('Security Assistance')">
+                        Contact Security
+                    </button>
+
+                </div>
+
+
+                <!-- Study Room -->
+                <div class="service-card">
+
+                    <div class="service-card-top">
+
+                        <span class="service-available">
+                            Available
+                        </span>
+
+                    </div>
+
+                    <h3>
+                        Study Room
+                    </h3>
+
+                    <p>
+                        Reserve a quiet study space for individual
+                        or group academic work.
+                    </p>
+
+                    <div class="service-info">
+
+                        <span>
+                            6 AM – 11 PM
+                        </span>
+
+                        <span>
+                            Free
+                        </span>
+
+                    </div>
+
+                    <button class="service-btn" onclick="requestService('Study Room')">
+                        Reserve Space
+                    </button>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- Service Requests -->
+        <section class="services-section">
+
+            <div class="section-top">
+
+                <div>
+
+                    <p class="small-title">
+                        MY REQUESTS
+                    </p>
+
+                    <h2>
+                        Recent Service Requests
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="service-request-list" id="serviceRequestList">
+
+                <div class="service-request-item">
+
+                    <div>
+
+                        <h3>
+                            Laundry Service
+                        </h3>
+
+                        <p>
+                            Pickup requested · Room 102
+                        </p>
+
+                        <small>
+                            29 Aug 2026
+                        </small>
+
+                    </div>
+
+                    <span class="service-request-status">
+                        Completed
+                    </span>
+
+                </div>
+
+
+                <div class="service-request-item">
+
+                    <div>
+
+                        <h3>
+                            Study Room
+                        </h3>
+
+                        <p>
+                            Evening reservation · Block A
+                        </p>
+
+                        <small>
+                            30 Aug 2026
+                        </small>
+
+                    </div>
+
+                    <span class="service-request-status upcoming-service">
+                        Confirmed
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Help Card -->
+        <section class="services-help">
+
+            <div>
+
+                <h2>
+                    Need something else?
+                </h2>
+
+                <p>
+                    If you cannot find the service you need,
+                    submit a complaint or contact hostel administration.
+                </p>
+
+            </div>
+
+            <a href="complaints.html" class="service-help-btn">
+                Contact Admin
+            </a>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="footer-logo">
+            Smart Hostel
+        </div>
+
+        <p>
+            Smart Hostel Room Management Portal
+        </p>
+
+        <p class="copyright">
+            © 2026 Smart Hostel. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

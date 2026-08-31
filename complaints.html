@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Smart Hostel | Complaints</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+
+        <div class="logo">
+            <span>Smart Hostel</span>
+        </div>
+
+        <nav>
+            <a href="index.html">Dashboard</a>
+            <a href="registration.html">Registration</a>
+            <a href="rooms.html">Rooms</a>
+            <a href="complaints.html">Complaints</a>
+            <a href="fees.html">Fees</a>
+            <a href="mess.html">Mess</a>
+            <a href="maintenance.html">Maintenance</a>
+            <a href="services.html">Services</a>
+        </nav>
+
+    </header>
+
+
+    <!-- Page Header -->
+    <section class="page-header">
+
+        <p class="small-title">SAFETY & MAINTENANCE</p>
+
+        <h1>Complaint Management</h1>
+
+        <p>
+            Report hostel issues and track your complaints until resolution.
+        </p>
+
+    </section>
+
+
+    <!-- Main Content -->
+    <main class="complaints-container">
+
+
+        <!-- Complaint Statistics -->
+        <section class="complaint-stats">
+
+            <div class="complaint-stat">
+                <div>
+                    <p>Total Complaints</p>
+                    <h2 id="totalComplaints">3</h2>
+                </div>
+            </div>
+
+
+            <div class="complaint-stat">
+                <div>
+                    <p>Pending</p>
+                    <h2 id="pendingComplaints">1</h2>
+                </div>
+            </div>
+
+
+            <div class="complaint-stat">
+                <div>
+                    <p>In Progress</p>
+                    <h2 id="progressComplaints">1</h2>
+                </div>
+            </div>
+
+
+            <div class="complaint-stat">
+                <div>
+                    <p>Resolved</p>
+                    <h2 id="resolvedComplaints">1</h2>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- Two Column Layout -->
+        <section class="complaint-layout">
+
+
+            <!-- Complaint Form -->
+            <div class="complaint-form-card">
+
+                <div class="form-section-title">
+
+                    <span>01</span>
+
+                    <div>
+                        <h2>Report an Issue</h2>
+
+                        <p>
+                            Submit a new hostel complaint.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <form id="complaintForm">
+
+
+                    <div class="form-group">
+
+                        <label for="complaintCategory">
+                            Complaint Category
+                        </label>
+
+                        <select id="complaintCategory" required>
+
+                            <option value="">
+                                Select category
+                            </option>
+
+                            <option value="Plumbing">
+                                Plumbing
+                            </option>
+
+                            <option value="Maintenance">
+                                Maintenance
+                            </option>
+
+                            <option value="Security">
+                                Security
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="roomNumber">
+                            Room Number
+                        </label>
+
+                        <input type="text" id="roomNumber" placeholder="Example: 102" required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="complaintDescription">
+                            Description
+                        </label>
+
+                        <textarea id="complaintDescription" rows="5" placeholder="Describe the issue..."
+                            required></textarea>
+
+                    </div>
+
+
+                    <button type="submit" class="btn primary-btn complaint-submit">
+                        Submit Complaint
+                    </button>
+
+
+                </form>
+
+            </div>
+
+
+            <!-- Safety Notice -->
+            <div class="safety-card">
+
+                <h2>Hostel Safety</h2>
+
+                <p>
+                    Please report security concerns immediately.
+                    Complaints help the hostel team maintain a safe
+                    and comfortable environment.
+                </p>
+
+
+                <div class="emergency-box">
+
+                    <div>
+                        <strong>Emergency Issue?</strong>
+
+                        <p>
+                            Contact the hostel warden directly.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Complaint Tracker -->
+        <section class="ticket-section">
+
+            <div class="ticket-heading">
+
+                <div>
+
+                    <p class="small-title">
+                        ACTIVE TICKETS
+                    </p>
+
+                    <h2>
+                        Complaint Tracker
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="ticket-list" id="ticketList">
+
+
+                <!-- Ticket 1 -->
+                <div class="ticket-card">
+
+                    <div class="ticket-main">
+
+                        <div>
+
+                            <div class="ticket-title">
+
+                                <h3>
+                                    Broken ceiling fan
+                                </h3>
+
+                                <span class="ticket-id">
+                                    #CMP001
+                                </span>
+
+                            </div>
+
+                            <p>
+                                Room 102 · Maintenance
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="ticket-right">
+
+                        <span class="ticket-status progress">
+                            In Progress
+                        </span>
+
+                        <small>
+                            30 Aug 2026
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Ticket 2 -->
+                <div class="ticket-card">
+
+                    <div class="ticket-main">
+
+                        <div>
+
+                            <div class="ticket-title">
+
+                                <h3>
+                                    Water leakage
+                                </h3>
+
+                                <span class="ticket-id">
+                                    #CMP002
+                                </span>
+
+                            </div>
+
+                            <p>
+                                Room 105 · Plumbing
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="ticket-right">
+
+                        <span class="ticket-status pending">
+                            Pending
+                        </span>
+
+                        <small>
+                            29 Aug 2026
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Ticket 3 -->
+                <div class="ticket-card">
+
+                    <div class="ticket-main">
+
+                        <div>
+
+                            <div class="ticket-title">
+
+                                <h3>
+                                    Corridor light issue
+                                </h3>
+
+                                <span class="ticket-id">
+                                    #CMP003
+                                </span>
+
+                            </div>
+
+                            <p>
+                                Block A · Security
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="ticket-right">
+
+                        <span class="ticket-status resolved">
+                            Resolved
+                        </span>
+
+                        <small>
+                            27 Aug 2026
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="footer-logo">
+            Smart Hostel
+        </div>
+
+        <p>
+            Smart Hostel Room Management Portal
+        </p>
+
+        <p class="copyright">
+            © 2026 Smart Hostel. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

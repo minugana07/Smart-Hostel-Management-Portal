@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Smart Hostel | Registration</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+
+        <div class="logo">
+            <span>Smart Hostel</span>
+        </div>
+
+        <nav>
+            <a href="index.html">Dashboard</a>
+            <a href="registration.html">Registration</a>
+            <a href="rooms.html">Rooms</a>
+            <a href="complaints.html">Complaints</a>
+            <a href="fees.html">Fees</a>
+            <a href="mess.html">Mess</a>
+            <a href="maintenance.html">Maintenance</a>
+            <a href="services.html">Services</a>
+        </nav>
+
+    </header>
+
+
+    <!-- Page Header -->
+    <section class="page-header">
+
+        <p class="small-title">HOSTEL ADMISSION</p>
+
+        <h1>Student Registration</h1>
+
+        <p>
+            Register your details to apply for hostel accommodation.
+        </p>
+
+    </section>
+
+
+    <!-- Registration Form -->
+    <main class="form-container">
+
+        <form id="registrationForm">
+
+            <!-- Personal Information -->
+            <div class="form-section">
+
+                <div class="form-section-title">
+                    <span>01</span>
+
+                    <div>
+                        <h2>Personal Information</h2>
+                        <p>Enter the student's basic details.</p>
+                    </div>
+                </div>
+
+
+                <div class="form-grid">
+
+                    <div class="form-group">
+
+                        <label for="studentName">
+                            Student Name
+                        </label>
+
+                        <input type="text" id="studentName" name="studentName" placeholder="Enter full name" required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="studentId">
+                            Student ID
+                        </label>
+
+                        <input type="text" id="studentId" name="studentId" placeholder="Enter student ID" required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="email">
+                            Email Address
+                        </label>
+
+                        <input type="email" id="email" name="email" placeholder="example@email.com" required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="phone">
+                            Phone Number
+                        </label>
+
+                        <input type="tel" id="phone" name="phone" placeholder="Enter phone number" required>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Academic Information -->
+            <div class="form-section">
+
+                <div class="form-section-title">
+
+                    <span>02</span>
+
+                    <div>
+                        <h2>Academic Information</h2>
+                        <p>Provide your course details.</p>
+                    </div>
+
+                </div>
+
+
+                <div class="form-grid">
+
+                    <div class="form-group">
+
+                        <label for="course">
+                            Course / Programme
+                        </label>
+
+                        <input type="text" id="course" name="course" placeholder="Enter course" required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="year">
+                            Year of Study
+                        </label>
+
+                        <select id="year" name="year" required>
+
+                            <option value="">
+                                Select year
+                            </option>
+
+                            <option value="1">
+                                First Year
+                            </option>
+
+                            <option value="2">
+                                Second Year
+                            </option>
+
+                            <option value="3">
+                                Third Year
+                            </option>
+
+                            <option value="4">
+                                Fourth Year
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="department">
+                            Department
+                        </label>
+
+                        <select id="department" name="department" required>
+
+                            <option value="">
+                                Select department
+                            </option>
+
+                            <option value="cse">
+                                Computer Science
+                            </option>
+
+                            <option value="it">
+                                Information Technology
+                            </option>
+
+                            <option value="ece">
+                                Electronics & Communication
+                            </option>
+
+                            <option value="eee">
+                                Electrical & Electronics
+                            </option>
+
+                            <option value="mech">
+                                Mechanical
+                            </option>
+
+                            <option value="civil">
+                                Civil Engineering
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="hostelType">
+                            Hostel Preference
+                        </label>
+
+                        <select id="hostelType" name="hostelType" required>
+
+                            <option value="">
+                                Select preference
+                            </option>
+
+                            <option value="single">
+                                Single Room
+                            </option>
+
+                            <option value="double">
+                                Double Sharing
+                            </option>
+
+                            <option value="triple">
+                                Triple Sharing
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Parent / Guardian Information -->
+            <div class="form-section">
+
+                <div class="form-section-title">
+
+                    <span>03</span>
+
+                    <div>
+                        <h2>Parent / Guardian Details</h2>
+                        <p>Provide an emergency contact.</p>
+                    </div>
+
+                </div>
+
+
+                <div class="form-grid">
+
+                    <div class="form-group">
+
+                        <label for="guardianName">
+                            Parent / Guardian Name
+                        </label>
+
+                        <input type="text" id="guardianName" name="guardianName" placeholder="Enter name" required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="guardianPhone">
+                            Contact Number
+                        </label>
+
+                        <input type="tel" id="guardianPhone" name="guardianPhone" placeholder="Enter contact number"
+                            required>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Declaration -->
+            <div class="declaration">
+
+                <label>
+
+                    <input type="checkbox" id="declaration" required>
+
+                    <span>
+                        I confirm that the information provided above
+                        is correct and complete.
+                    </span>
+
+                </label>
+
+            </div>
+
+
+            <!-- Submit -->
+            <div class="form-actions">
+
+                <button type="reset" class="btn secondary-btn">
+                    Clear Form
+                </button>
+
+                <button type="submit" class="btn primary-btn">
+                    Submit Registration
+                </button>
+
+            </div>
+
+        </form>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="footer-logo">
+            Smart Hostel
+        </div>
+
+        <p>
+            Smart Hostel Room Management Portal
+        </p>
+
+        <p class="copyright">
+            © 2026 Smart Hostel. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Smart Hostel | Rooms</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+
+        <div class="logo">
+            <span>Smart Hostel</span>
+        </div>
+
+        <nav>
+            <a href="index.html">Dashboard</a>
+            <a href="registration.html">Registration</a>
+            <a href="rooms.html" class="active">Rooms</a>
+            <a href="complaints.html">Complaints</a>
+            <a href="fees.html">Fees</a>
+            <a href="mess.html">Mess</a>
+            <a href="maintenance.html">Maintenance</a>
+            <a href="services.html">Services</a>
+        </nav>
+
+    </header>
+
+
+    <!-- Page Header -->
+    <section class="page-header">
+
+        <p class="small-title">ROOM ALLOCATION</p>
+
+        <h1>Find Your Room</h1>
+
+        <p>
+            Select your floor to view available rooms.
+        </p>
+
+    </section>
+
+
+    <main class="floor-container">
+
+        <!-- Floor Selection -->
+        <section class="floor-section">
+
+            <div class="floor-heading">
+
+                <p class="small-title">SELECT FLOOR</p>
+
+                <h2>Choose Your Floor</h2>
+
+                <p>
+                    Room allotment for first-semester students is available
+                    on the Ground and 1st floors.
+                </p>
+
+            </div>
+
+
+            <div class="floor-grid">
+
+
+                <!-- Ground Floor -->
+                <a href="ground-floor.html" class="floor-card active-floor">
+
+                    <div class="floor-card-top">
+
+                        <span class="floor-status">
+                            Available
+                        </span>
+
+                    </div>
+
+                    <h3>Ground Floor</h3>
+
+                    <p>
+                        Room numbers 001 – 015
+                    </p>
+
+                    <div class="floor-info">
+
+                        <span>15 Rooms</span>
+
+                        <span>1st Semester</span>
+
+                    </div>
+
+                    <div class="floor-button">
+                        View Rooms →
+                    </div>
+
+                </a>
+
+
+                <!-- First Floor -->
+                <a href="first-floor.html" class="floor-card active-floor">
+
+                    <div class="floor-card-top">
+
+                        <span class="floor-status">
+                            Available
+                        </span>
+
+                    </div>
+
+                    <h3>1st Floor</h3>
+
+                    <p>
+                        Room numbers 101 – 130
+                    </p>
+
+                    <div class="floor-info">
+
+                        <span>30 Rooms</span>
+
+                        <span>1st Semester</span>
+
+                    </div>
+
+                    <div class="floor-button">
+                        View Rooms →
+                    </div>
+
+                </a>
+
+
+                <!-- Second Floor -->
+                <button class="floor-card locked-floor" onclick="showHigherSemesterMessage('2nd Floor')">
+
+                    <div class="floor-card-top">
+
+                        <span class="floor-status locked-status">
+                            Reserved
+                        </span>
+
+                    </div>
+
+                    <h3>2nd Floor</h3>
+
+                    <p>
+                        Room numbers 201 – 230
+                    </p>
+
+                    <div class="floor-info">
+
+                        <span>30 Rooms</span>
+
+                        <span>Higher Semesters</span>
+
+                    </div>
+
+                    <div class="floor-button locked-button">
+                        Reserved
+                    </div>
+
+                </button>
+
+
+                <!-- Third Floor -->
+                <button class="floor-card locked-floor" onclick="showHigherSemesterMessage('3rd Floor')">
+
+                    <div class="floor-card-top">
+
+                        <span class="floor-status locked-status">
+                            Reserved
+                        </span>
+
+                    </div>
+
+                    <h3>3rd Floor</h3>
+
+                    <p>
+                        Room numbers 301 – 330
+                    </p>
+
+                    <div class="floor-info">
+
+                        <span>30 Rooms</span>
+
+                        <span>Higher Semesters</span>
+
+                    </div>
+
+                    <div class="floor-button locked-button">
+                        Reserved
+                    </div>
+
+                </button>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- Information Notice -->
+        <section class="room-notice">
+
+            <div>
+
+                <h3>Room Allocation</h3>
+
+                <p>
+                    Ground and 1st floor rooms are available for
+                    first-semester students. The 2nd and 3rd floors
+                    are reserved for higher-semester students.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="footer-logo">
+            Smart Hostel
+        </div>
+
+        <p>
+            Smart Hostel Room Management Portal
+        </p>
+
+        <p class="copyright">
+            © 2026 Smart Hostel. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Smart Hostel | Maintenance</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar">
+
+        <div class="logo">
+            🏠 <span>Smart Hostel</span>
+        </div>
+
+        <nav>
+            <a href="index.html">Dashboard</a>
+            <a href="registration.html">Registration</a>
+            <a href="rooms.html">Rooms</a>
+            <a href="complaints.html">Complaints</a>
+            <a href="fees.html">Fees</a>
+            <a href="mess.html">Mess</a>
+            <a href="maintenance.html">Maintenance</a>
+            <a href="services.html" class="active">Services</a>
+        </nav>
+
+    </header>
+
+
+    <!-- Page Header -->
+    <section class="page-header">
+
+        <p class="small-title">HOSTEL FACILITIES</p>
+
+        <h1>Maintenance</h1>
+
+        <p>
+            Report maintenance issues and track repair requests.
+        </p>
+
+    </section>
+
+
+    <main class="maintenance-container">
+
+
+        <!-- Maintenance Overview -->
+        <section class="maintenance-overview">
+
+            <div class="maintenance-stat">
+
+                <div class="maintenance-stat-icon">
+                    🔧
+                </div>
+
+                <div>
+                    <p>My Requests</p>
+                    <h2 id="maintenanceTotal">4</h2>
+                </div>
+
+            </div>
+
+
+            <div class="maintenance-stat">
+
+                <div class="maintenance-stat-icon pending-maintenance">
+                    ⏳
+                </div>
+
+                <div>
+                    <p>Pending</p>
+                    <h2 id="maintenancePending">1</h2>
+                </div>
+
+            </div>
+
+
+            <div class="maintenance-stat">
+
+                <div class="maintenance-stat-icon working-maintenance">
+                    🛠️
+                </div>
+
+                <div>
+                    <p>In Progress</p>
+                    <h2 id="maintenanceProgress">2</h2>
+                </div>
+
+            </div>
+
+
+            <div class="maintenance-stat">
+
+                <div class="maintenance-stat-icon completed-maintenance">
+                    ✓
+                </div>
+
+                <div>
+                    <p>Completed</p>
+                    <h2 id="maintenanceCompleted">1</h2>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Request Form + Categories -->
+        <section class="maintenance-layout">
+
+
+            <!-- Request Form -->
+            <div class="maintenance-form-card">
+
+                <div class="form-section-title">
+
+                    <span>01</span>
+
+                    <div>
+
+                        <h2>New Maintenance Request</h2>
+
+                        <p>
+                            Tell us what needs to be repaired.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <form id="maintenanceForm">
+
+
+                    <div class="form-group">
+
+                        <label for="maintenanceType">
+                            Maintenance Type
+                        </label>
+
+                        <select
+                            id="maintenanceType"
+                            required
+                        >
+
+                            <option value="">
+                                Select issue type
+                            </option>
+
+                            <option value="Electrical">
+                                Electrical
+                            </option>
+
+                            <option value="Plumbing">
+                                Plumbing
+                            </option>
+
+                            <option value="Furniture">
+                                Furniture
+                            </option>
+
+                            <option value="Appliance">
+                                Appliance
+                            </option>
+
+                            <option value="Cleaning">
+                                Cleaning
+                            </option>
+
+                            <option value="Other">
+                                Other
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="maintenance-form-row">
+
+                        <div class="form-group">
+
+                            <label for="maintenanceRoom">
+                                Room Number
+                            </label>
+
+                            <input
+                                type="text"
+                                id="maintenanceRoom"
+                                placeholder="Example: 102"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="maintenancePriority">
+                                Priority
+                            </label>
+
+                            <select
+                                id="maintenancePriority"
+                                required
+                            >
+
+                                <option value="">
+                                    Select priority
+                                </option>
+
+                                <option value="Low">
+                                    Low
+                                </option>
+
+                                <option value="Medium">
+                                    Medium
+                                </option>
+
+                                <option value="High">
+                                    High
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="maintenanceDescription">
+                            Issue Description
+                        </label>
+
+                        <textarea
+                            id="maintenanceDescription"
+                            rows="5"
+                            placeholder="Describe the maintenance issue..."
+                            required
+                        ></textarea>
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="btn primary-btn maintenance-submit"
+                    >
+                        Submit Request
+                    </button>
+
+
+                </form>
+
+            </div>
+
+
+            <!-- Categories -->
+            <div class="maintenance-category-card">
+
+                <p class="small-title">
+                    COMMON REQUESTS
+                </p>
+
+                <h2>
+                    What needs attention?
+                </h2>
+
+
+                <div class="maintenance-categories">
+
+
+                    <div class="maintenance-category">
+
+                        <span>💡</span>
+
+                        <div>
+                            <strong>Electrical</strong>
+                            <small>Lights, fans, switches</small>
+                        </div>
+
+                    </div>
+
+
+                    <div class="maintenance-category">
+
+                        <span>🚿</span>
+
+                        <div>
+                            <strong>Plumbing</strong>
+                            <small>Taps, pipes, leakage</small>
+                        </div>
+
+                    </div>
+
+
+                    <div class="maintenance-category">
+
+                        <span>🪑</span>
+
+                        <div>
+                            <strong>Furniture</strong>
+                            <small>Beds, chairs, tables</small>
+                        </div>
+
+                    </div>
+
+
+                    <div class="maintenance-category">
+
+                        <span>🧹</span>
+
+                        <div>
+                            <strong>Cleaning</strong>
+                            <small>Room & common areas</small>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Request Tracker -->
+        <section class="maintenance-section">
+
+            <div class="section-top">
+
+                <div>
+
+                    <p class="small-title">
+                        REQUEST HISTORY
+                    </p>
+
+                    <h2>
+                        My Maintenance Requests
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div
+                class="maintenance-list"
+                id="maintenanceList"
+            >
+
+
+                <!-- Request 1 -->
+                <div class="maintenance-request">
+
+                    <div class="request-icon electrical">
+                        💡
+                    </div>
+
+                    <div class="request-details">
+
+                        <div class="request-title">
+
+                            <h3>
+                                Ceiling light not working
+                            </h3>
+
+                            <span>
+                                #MNT001
+                            </span>
+
+                        </div>
+
+                        <p>
+                            Room 102 · Electrical
+                        </p>
+
+                        <small>
+                            Submitted 29 Aug 2026
+                        </small>
+
+                    </div>
+
+
+                    <div class="request-meta">
+
+                        <span class="priority high">
+                            High Priority
+                        </span>
+
+                        <span class="maintenance-status progress">
+                            In Progress
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Request 2 -->
+                <div class="maintenance-request">
+
+                    <div class="request-icon plumbing">
+                        🚿
+                    </div>
+
+                    <div class="request-details">
+
+                        <div class="request-title">
+
+                            <h3>
+                                Bathroom tap leakage
+                            </h3>
+
+                            <span>
+                                #MNT002
+                            </span>
+
+                        </div>
+
+                        <p>
+                            Room 105 · Plumbing
+                        </p>
+
+                        <small>
+                            Submitted 28 Aug 2026
+                        </small>
+
+                    </div>
+
+
+                    <div class="request-meta">
+
+                        <span class="priority medium">
+                            Medium Priority
+                        </span>
+
+                        <span class="maintenance-status pending">
+                            Pending
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Request 3 -->
+                <div class="maintenance-request">
+
+                    <div class="request-icon furniture">
+                        🪑
+                    </div>
+
+                    <div class="request-details">
+
+                        <div class="request-title">
+
+                            <h3>
+                                Chair replacement
+                            </h3>
+
+                            <span>
+                                #MNT003
+                            </span>
+
+                        </div>
+
+                        <p>
+                            Room 108 · Furniture
+                        </p>
+
+                        <small>
+                            Submitted 24 Aug 2026
+                        </small>
+
+                    </div>
+
+
+                    <div class="request-meta">
+
+                        <span class="priority low">
+                            Low Priority
+                        </span>
+
+                        <span class="maintenance-status completed">
+                            Completed
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- Maintenance Note -->
+        <section class="maintenance-note">
+
+            <span>💡</span>
+
+            <div>
+
+                <h3>
+                    Maintenance Team
+                </h3>
+
+                <p>
+                    Standard requests are usually reviewed within
+                    24 hours. High-priority issues are handled first.
+                </p>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="footer-logo">
+            🏠 Smart Hostel
+        </div>
+
+        <p>
+            Smart Hostel Room Management Portal
+        </p>
+
+        <p class="copyright">
+            © 2026 Smart Hostel. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

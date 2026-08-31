@@ -252,17 +252,42 @@ function formatDate(date) {
 
 }
 /* =========================================
-   ROOM SELECTION
+   ROOM ALLOCATION
    ========================================= */
 
 function selectRoom(roomNumber) {
 
-    showNotification(
-        "Room " + roomNumber + " selected successfully!",
-        "success"
+    alert(
+        "Room " + roomNumber +
+        " selected!\n\n" +
+        "This room has been selected for your allocation."
     );
 
-    console.log("Selected Room:", roomNumber);
+}
+/* =========================================
+   FLOOR SELECTION
+   ========================================= */
+
+function openGroundFloor() {
+
+    window.location.href = "ground-floor.html";
+
+}
+
+
+function openFirstFloor() {
+
+    window.location.href = "first-floor.html";
+
+}
+
+
+function higherSemesterNotice(floor) {
+
+    alert(
+        floor +
+        " is reserved for higher-semester students."
+    );
 
 }
 /* =========================================

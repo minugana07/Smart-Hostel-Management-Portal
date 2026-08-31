@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Smart Hostel | 1st Floor</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar">
+
+        <div class="logo">
+            🏠 <span>Smart Hostel</span>
+        </div>
+
+        <nav>
+            <a href="index.html">Dashboard</a>
+            <a href="registration.html">Registration</a>
+            <a href="rooms.html" class="active">Rooms</a>
+            <a href="complaints.html">Complaints</a>
+            <a href="fees.html">Fees</a>
+            <a href="mess.html">Mess</a>
+            <a href="maintenance.html">Maintenance</a>
+            <a href="services.html">Services</a>
+        </nav>
+
+    </header>
+
+
+    <!-- Page Header -->
+    <section class="page-header">
+
+        <p class="small-title">ROOM ALLOCATION</p>
+
+        <h1>1st Floor</h1>
+
+        <p>
+            Select an available room for your hostel accommodation.
+        </p>
+
+    </section>
+
+
+    <main class="floor-room-container">
+
+        <!-- Back -->
+        <a href="rooms.html" class="back-room-link">
+            ← Back to Floors
+        </a>
+
+
+        <!-- Floor Header -->
+        <section class="floor-room-header">
+
+            <div>
+
+                <p class="small-title">1ST SEMESTER</p>
+
+                <h2>1st Floor Rooms</h2>
+
+                <p>
+                    Rooms 101 – 130 · 30 Rooms
+                </p>
+
+            </div>
+
+            <div class="floor-room-count">
+                30 Rooms
+            </div>
+
+        </section>
+
+
+        <!-- Legend -->
+        <section class="room-legend-box">
+
+            <span>
+                <i class="legend-dot available"></i>
+                Available
+            </span>
+
+            <span>
+                <i class="legend-dot partial"></i>
+                Partially Available
+            </span>
+
+            <span>
+                <i class="legend-dot occupied"></i>
+                Occupied
+            </span>
+
+        </section>
+
+
+        <!-- Rooms -->
+        <section class="floor-room-section">
+
+            <div
+                class="floor-room-grid"
+                id="firstFloorRoomGrid">
+            </div>
+
+        </section>
+
+
+        <!-- Notice -->
+        <section class="room-notice">
+
+            <div>
+                <span class="notice-icon">💡</span>
+            </div>
+
+            <div>
+
+                <h3>Room Allocation</h3>
+
+                <p>
+                    All rooms are 3-sharing rooms.
+                    Select an available room to continue.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="footer-logo">
+            🏠 Smart Hostel
+        </div>
+
+        <p>
+            Smart Hostel Room Management Portal
+        </p>
+
+        <p class="copyright">
+            © 2026 Smart Hostel. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+    <!-- Generate 101 - 130 -->
+    <script>
+
+        const firstFloorGrid =
+            document.getElementById("firstFloorRoomGrid");
+
+        for (let room = 101; room <= 130; room++) {
+
+            const roomCard =
+                document.createElement("div");
+
+            roomCard.className =
+                "room-card available-room";
+
+            roomCard.innerHTML = `
+
+                <div class="room-top">
+
+                    <span class="room-number">
+                        ${room}
+                    </span>
+
+                    <span class="room-status">
+                        Available
+                    </span>
+
+                </div>
+
+
+                <div class="room-bed">
+                    🛏️
+                </div>
+
+
+                <h3>
+                    Room ${room}
+                </h3>
+
+
+                <p>
+                    3-Sharing Room
+                </p>
+
+
+                <div class="room-info">
+
+                    <span>
+                        👤 0 / 3
+                    </span>
+
+                    <span>
+                        1st Floor
+                    </span>
+
+                </div>
+
+
+                <button
+                    class="room-button"
+                    onclick="selectRoom('${room}')"
+                >
+                    Select Room
+                </button>
+
+            `;
+
+            firstFloorGrid.appendChild(roomCard);
+        }
+
+    </script>
+
+</body>
+
+</html>

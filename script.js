@@ -743,7 +743,7 @@ function requestService(serviceName) {
     );
 
 }
-
+ 
 
 function showHigherSemesterMessage(floorName) {
 
